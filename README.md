@@ -8,7 +8,8 @@
 
 1. Add font and color - done
 2. Add variables for SASS - need to add @use instead of @import - done
-3. Add images
+3. Add images - done
+4. Add few style for body and root - done
 
 #### Mobile design first < 700px
 
