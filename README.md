@@ -21,11 +21,12 @@
      - clean up stylesheet for home, app and mediaQ - done
 
    - Name and title
-     - next: add style for mobile
+     - add style for mobile - done
 
 2. About
 
    - About me title
+   - add style and animation on scroll
    - add image
    - add info
    - add description

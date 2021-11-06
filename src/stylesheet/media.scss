@@ -9,7 +9,28 @@
         max-width: 100%;
         @include display(flex, row);
         justify-content: space-evenly;
+        font-size: 15px;
       }
+    }
+  }
+  header {
+    text-align: center;
+    padding: 25% 7%;
+    background-image: url("../images/sarah.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & > * {
+      margin: 0;
+    }
+    h1 {
+      padding-right: 100px;
+      font-size: 2.5em;
+    }
+
+    h2 {
+      padding-left: 150px;
+      letter-spacing: 1px;
     }
   }
 }

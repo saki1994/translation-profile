@@ -25,8 +25,7 @@ const Home = () => {
     <header>
       <h1>Hi, I'm Deniz</h1> 
       <h2>your translator...</h2>
-    </header>
-  
+    </header>  
   </>);
 };
 
