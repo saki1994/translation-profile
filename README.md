@@ -16,6 +16,8 @@
 1. Home
 
    - Add languages icon
+     - style langguages icon - done
+     - next: clean up stylesheet for home, app and mediaQ
    - hamburger navbar - modal Bootstrap
    - Name and title
 
