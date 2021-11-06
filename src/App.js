@@ -1,5 +1,4 @@
 import "./stylesheet/App.scss";
-import "./stylesheet/Media700px.scss";
 import Home from "./components/Home";
 
 function App() {

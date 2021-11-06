@@ -16,10 +16,12 @@
 1. Home
 
    - Add languages icon
+
      - style langguages icon - done
-     - next: clean up stylesheet for home, app and mediaQ
-   - hamburger navbar - modal Bootstrap
+     - clean up stylesheet for home, app and mediaQ - done
+
    - Name and title
+     - next: add style for mobile
 
 2. About
 

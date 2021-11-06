@@ -1,3 +1,24 @@
 $header-font: "Courgette", cursive;
 $text-font: "Montserrat", sans-serif;
-$color: red;
+$text-color: #37322d;
+$bg-color: #fefbf3;
+$border-color: #ded9c4;
+
+@mixin img-size($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+@mixin border-radius($var) {
+  border-radius: $var;
+}
+
+@mixin border($num, $type, $color) {
+  border: $num $type $color;
+}
+
+@mixin display($type, $dir, $gap: 0) {
+  display: $type;
+  flex-direction: $dir;
+  gap: $gap;
+}
