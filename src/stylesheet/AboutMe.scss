@@ -1,0 +1,14 @@
+.about-me {
+  padding: 7%;
+  text-align: center;
+
+  .profile {
+    text-align: left;
+    width: fit-content;
+    margin: auto;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}

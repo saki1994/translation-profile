@@ -25,11 +25,12 @@
 
 2. About
 
-   - About me title
+   - About me title -done
    - add style and animation on scroll
-   - add image
-   - add info
-   - add description
+   - add image - done
+   - add info - done
+   - add description - done
+   - render navbar and header to app
 
 3. Services
 
