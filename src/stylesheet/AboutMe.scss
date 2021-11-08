@@ -1,6 +1,9 @@
+@import "variables";
+
 .about-me {
   padding: 7%;
   text-align: center;
+  background-color: $border-color;
 
   .profile {
     text-align: left;

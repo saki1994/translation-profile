@@ -6,10 +6,15 @@ import Typography from "@mui/material/Typography";
 
 const Services = ({ photo, title, body }) => {
   return (
-    <Card>
+    <Card className="offer-div">
       <CardMedia component="img" height="120" image={photo} alt={title} />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+      <CardContent className="card-text-div">
+        <Typography
+          className="service-title"
+          gutterBottom
+          variant="h5"
+          component="div"
+        >
           {title}
         </Typography>
         <Typography variant="body2" color="text.secondary">

@@ -40,7 +40,7 @@
      - what we offer - MUI - done
        - diff types of translation -done
        - add images and title -done
-       - style we offer div
+       - style we offer div - done
      - we promise to deliver <-- next
        - quality, confi and fast
        - add images and title

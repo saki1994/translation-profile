@@ -1,14 +1,41 @@
 @import "../variables";
 
+.services {
+  padding: 7%;
+  text-align: center;
+}
+
 .services-offer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+
+  .offer-div {
+    padding-top: 2em;
+  }
   div {
     width: 80%;
     margin: auto;
-    padding-top: 1.5em;
+
+    .card-text-div {
+      padding: 1em;
+
+      .service-title {
+        font-size: 1.2em;
+        padding: 2%;
+      }
+    }
   }
   img {
     width: 80%;
     margin: auto;
-    border: 1px solid black;
+  }
+}
+
+@media (max-width: 650px) {
+  .services-offer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }

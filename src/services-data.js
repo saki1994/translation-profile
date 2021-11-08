@@ -1,6 +1,6 @@
-import document from "./images/bg.png";
-import website from "./images/bg.png";
-import person from "./images/bg.png";
+import document from "./images/document.PNG";
+import website from "./images/website.PNG";
+import person from "./images/transcriber.PNG";
 
 const services = {
   english: [
