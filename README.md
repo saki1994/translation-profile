@@ -32,15 +32,16 @@
    - add description - done
    - render navbar and header to app - done
 
-3. Services <-- next
+3. Services
 
-   - 3 diff. divs
+   - 3 diff. divs done
      - languages
        - polish, english, danish
-     - what we offer - carousel bootstrap
-       - diff types of translation
-       - add images and title
-     - we promise to deliver
+     - what we offer - MUI - done
+       - diff types of translation -done
+       - add images and title -done
+       - style we offer div
+     - we promise to deliver <-- next
        - quality, confi and fast
        - add images and title
 

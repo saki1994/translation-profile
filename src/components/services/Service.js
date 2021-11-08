@@ -1,0 +1,23 @@
+import React from "react";
+import Card from "@mui/material/Card";
+import CardMedia from "@mui/material/CardMedia";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+
+const Services = ({ photo, title, body }) => {
+  return (
+    <Card>
+      <CardMedia component="img" height="120" image={photo} alt={title} />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {title}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          {body}
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+};
+
+export default Services;
