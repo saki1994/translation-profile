@@ -26,13 +26,13 @@
 2. About
 
    - About me title -done
-   - add style and animation on scroll
+   - add style and animation on scroll - for later
    - add image - done
    - add info - done
    - add description - done
-   - render navbar and header to app
+   - render navbar and header to app - done
 
-3. Services
+3. Services <-- next
 
    - 3 diff. divs
      - languages

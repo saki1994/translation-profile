@@ -1,16 +1,14 @@
 @import "variables";
 
 @media (max-width: 700px) {
-  .home-div {
-    .mobile-size {
-      @include display(flex, column, 30px);
+  .navbar {
+    @include display(flex, column, 30px);
 
-      ul:nth-child(2) {
-        max-width: 100%;
-        @include display(flex, row);
-        justify-content: space-evenly;
-        font-size: 15px;
-      }
+    ul:nth-child(2) {
+      max-width: 100%;
+      @include display(flex, row);
+      justify-content: space-evenly;
+      font-size: 15px;
     }
   }
   header {

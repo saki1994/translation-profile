@@ -1,16 +1,14 @@
 import "./stylesheet/App.scss";
-import Home from "./components/Home";
+import Navbar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
+import Header from './components/Header';
 
 function App() {
   return (
-    <>
-    <div className="home-div">
-      <Home /> 
-    </div>
-    <div className="about-me">
-      <AboutMe /> 
-    </div>
+    <> 
+      <Navbar />  
+      <Header /> 
+      <AboutMe />  
     </>
   );
 }

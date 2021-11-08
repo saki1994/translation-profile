@@ -1,0 +1,13 @@
+@import "variables";
+
+header {
+  font-family: $header-font;
+
+  h1 {
+    color: $text-color;
+  }
+
+  h2 {
+    color: $light-grey;
+  }
+}

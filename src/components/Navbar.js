@@ -1,13 +1,13 @@
 import React from "react";
-import "../stylesheet/home.scss";
+import "../stylesheet/Navbar.scss";
 import "../stylesheet/media.scss";
 import polishFlag from "../images/pl-flag.png";
 import britishFlag from "../images/gb-flag.png";
 import danishFlag from "../images/dk-flag.png";
 
-const Home = () => {
+const Navbar = () => {
   return (
-    <nav className="mobile-size">
+    <nav className="navbar nav-mobile">
       <ul className="languages">
         <li>
           <img src={polishFlag} alt="polish-flag" />
@@ -29,4 +29,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Navbar;
