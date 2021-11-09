@@ -41,9 +41,10 @@
        - diff types of translation -done
        - add images and title -done
        - style we offer div - done
-     - we promise to deliver <-- next
-       - quality, confi and fast
-       - add images and title
+     - we promise to deliver
+       - quality, confi and fast <--done
+       - add images and title <--done
+       - style promise to deliver div <-- next
 
 4. Testimonial
 

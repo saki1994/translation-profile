@@ -1,7 +1,8 @@
 import React from "react";
-import services from "../services-data";
+import services, { promises } from "../services-data";
 import Service from "./services/Service";
 import "../stylesheet/Services/Services.scss";
+import Stack from "@mui/material/Stack";
 
 const Services = () => {
   return (
@@ -19,6 +20,13 @@ const Services = () => {
           );
         })}
       </div>
+      <Stack>
+        {promises.english.map((promise, index) => {
+          return (
+            <Service key={index} photo={promise.img} body={promise.title} />
+          );
+        })}
+      </Stack>
     </div>
   );
 };

@@ -1,6 +1,9 @@
 import document from "./images/document.PNG";
 import website from "./images/website.PNG";
 import person from "./images/transcriber.PNG";
+import quality from "./images/quality.PNG";
+import fast from "./images/fast.PNG";
+import confidential from "./images/confidential.PNG";
 
 const services = {
   english: [
@@ -25,4 +28,22 @@ const services = {
   ]
 };
 
+const promises = {
+  english: [
+    {
+      img: quality,
+      title: "Quality Translation"
+    },
+    {
+      img: fast,
+      title: "Fast and On Time"
+    },
+    {
+      img: confidential,
+      title: "Confidentiality"
+    }
+  ]
+};
+
 export default services;
+export { promises };
