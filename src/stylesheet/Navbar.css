@@ -1,0 +1,31 @@
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  padding-top: 30px;
+  background-color: #fefbf3;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li {
+  list-style-type: none;
+}
+.navbar ul:first-child {
+  padding: 1%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+.navbar ul:first-child img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #ded9c4;
+}/*# sourceMappingURL=Navbar.css.map */

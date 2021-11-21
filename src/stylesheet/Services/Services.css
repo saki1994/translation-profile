@@ -1,0 +1,36 @@
+.services {
+  padding: 7%;
+  text-align: center;
+}
+
+.services-offer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.services-offer .offer-div {
+  padding-top: 2em;
+}
+.services-offer div {
+  width: 80%;
+  margin: auto;
+}
+.services-offer div .card-text-div {
+  padding: 1em;
+}
+.services-offer div .card-text-div .service-title {
+  font-size: 1.2em;
+  padding: 2%;
+}
+.services-offer img {
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 650px) {
+  .services-offer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}/*# sourceMappingURL=Services.css.map */

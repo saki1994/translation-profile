@@ -3,12 +3,13 @@ import services, { promises } from "../services-data";
 import Service from "./services/Service";
 import "../stylesheet/Services/Services.scss";
 import Stack from "@mui/material/Stack";
+import Carousel from "react-bootstrap/Carousel";
 
 const Services = () => {
   return (
     <div className="services">
-      <h3>Languages</h3>
-      <div className="services-offer mobile">
+      <h3>Services</h3>
+      <Stack className="services-offer mobile">
         {services.english.map((card, index) => {
           return (
             <Service
@@ -19,14 +20,16 @@ const Services = () => {
             />
           );
         })}
-      </div>
-      <Stack>
+      </Stack>
+      <Carousel className="promises-offer">
         {promises.english.map((promise, index) => {
           return (
-            <Service key={index} photo={promise.img} body={promise.title} />
+            <Carousel.Item>
+              <Service key={index} photo={promise.img} body={promise.title} />
+            </Carousel.Item>
           );
         })}
-      </Stack>
+      </Carousel>
     </div>
   );
 };

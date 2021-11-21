@@ -6,57 +6,23 @@
 
 ### What to do.
 
-1. Add font and color - done
-2. Add variables for SASS - need to add @use instead of @import - done
-3. Add images - done
-4. Add few style for body and root - done
+#### Mobile design
 
-#### Mobile design first < 700px
+1.  Services
 
-1. Home
+- carousel for promises quality - done
+- apply style promises images and texts
 
-   - Add languages icon
+2. Testimonial
 
-     - style langguages icon - done
-     - clean up stylesheet for home, app and mediaQ - done
+- automatic carousel
 
-   - Name and title
-     - add style for mobile - done
+3. Contact me
 
-2. About
+- link with images
 
-   - About me title -done
-   - add style and animation on scroll - for later
-   - add image - done
-   - add info - done
-   - add description - done
-   - render navbar and header to app - done
+4. Footer
 
-3. Services
+- copyrights
 
-   - 3 diff. divs done
-     - languages
-       - polish, english, danish
-     - what we offer - MUI - done
-       - diff types of translation -done
-       - add images and title -done
-       - style we offer div - done
-     - we promise to deliver
-       - quality, confi and fast <--done
-       - add images and title <--done
-       - style promise to deliver div <-- next
-
-4. Testimonial
-
-   - customer review - carousel
-   - name of customer
-   - company name
-
-5. Contact
-
-   - Contact me title
-   - images for upwork, whatsapp and email with link added
-   - phone number
-
-6. Footer
-   - copyright
+#### Browser and Tablet version

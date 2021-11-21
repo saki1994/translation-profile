@@ -1,0 +1,15 @@
+.about-me {
+  padding: 7%;
+  text-align: center;
+  background-color: #ded9c4;
+}
+.about-me .profile {
+  text-align: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.about-me .profile span {
+  font-weight: bold;
+}/*# sourceMappingURL=AboutMe.css.map */
