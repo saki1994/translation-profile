@@ -32,6 +32,21 @@
   }
 }
 
+.promises {
+  margin-top: 3em;
+  .promise-div {
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+    padding: 1em;
+
+    img {
+      width: 90%;
+      margin: auto;
+    }
+  }
+}
+
 @media (max-width: 650px) {
   .services-offer {
     display: flex;

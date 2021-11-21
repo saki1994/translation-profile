@@ -11,7 +11,7 @@
 1.  Services
 
 - carousel for promises quality - done
-- apply style promises images and texts
+- apply style promises images and texts - partially done
 
 2. Testimonial
 
