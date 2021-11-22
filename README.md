@@ -18,9 +18,9 @@
 - create file with review data - done
 - create component for testimony - done
 - create component for each review card - done
-- add style to each testimony
+- add style to each testimony - done
 
-3. Contact me
+3. Contact me <-- next
 
 - link with images
 
