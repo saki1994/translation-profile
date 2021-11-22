@@ -10,13 +10,14 @@ const reviews = {
     {
       review:
         "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-      name: "Raya",
-      company: "Raya Co.",
+      name: "Raya Cox",
+      company: "Raya Corp.",
       star: "5"
     },
     {
-      review: "Neque Bianca",
-      company: "Bianca inc.",
+      review: "Neque porro quisquam est qui dolorem ipsum quia dolor ",
+      name: "Bianca Atici",
+      company: "Bianca INC.",
       star: "5"
     }
   ]
