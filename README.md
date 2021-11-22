@@ -20,9 +20,11 @@
 - create component for each review card - done
 - add style to each testimony - done
 
-3. Contact me <-- next
+3. Contact me
 
-- link with images
+- add upload images -- done
+- create component for contact <-- next
+- create component with icon and link account
 
 4. Footer
 
