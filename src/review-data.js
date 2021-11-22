@@ -1,4 +1,4 @@
-const review = {
+const reviews = {
   english: [
     {
       review:
@@ -22,4 +22,4 @@ const review = {
   ]
 };
 
-export default review;
+export default reviews;

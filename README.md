@@ -16,8 +16,8 @@
 2.  Testimonial
 
 - create file with review data - done
-- create component for testimony <-- next
-- create component for each review card
+- create component for testimony - done
+- create component for each review card <-- next
 - automatic carousel
 
 3. Contact me
