@@ -1,4 +1,4 @@
-import "./stylesheet/App.scss";
+import "./stylesheet/App/App.scss";
 import Navbar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
 import Header from './components/Header';

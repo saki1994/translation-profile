@@ -21,7 +21,7 @@ const Services = () => {
           );
         })}
       </Stack>
-      <Carousel className="promises">
+      <Carousel controls={false} variant="dark" className="promises">
         {promises.english.map((promise, index) => {
           return (
             <Carousel.Item>

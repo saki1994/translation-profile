@@ -1,6 +1,5 @@
 import React from "react";
-import "../stylesheet/Navbar.scss";
-import "../stylesheet/media.scss";
+import "../stylesheet/Navbar/Navbar.scss";
 import polishFlag from "../images/pl-flag.png";
 import britishFlag from "../images/gb-flag.png";
 import danishFlag from "../images/dk-flag.png";

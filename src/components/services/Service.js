@@ -17,7 +17,11 @@ const Services = ({ photo, title, body }) => {
         >
           {title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          className="promise-title"
+        >
           {body}
         </Typography>
       </CardContent>

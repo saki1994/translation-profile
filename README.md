@@ -11,9 +11,9 @@
 1.  Services
 
 - carousel for promises quality - done
-- apply style promises images and texts - partially done
+- apply style promises images and texts - done
 
-2. Testimonial
+2.  Testimonial <-- next
 
 - automatic carousel
 

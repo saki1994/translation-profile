@@ -35,14 +35,17 @@
 .promises {
   margin-top: 3em;
   .promise-div {
-    border: 1px solid black;
-    width: 90%;
     margin: auto;
     padding: 1em;
 
     img {
       width: 90%;
       margin: auto;
+    }
+
+    .promise-title {
+      font-weight: 700;
+      margin-bottom: 1em;
     }
   }
 }
