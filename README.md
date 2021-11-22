@@ -13,8 +13,11 @@
 - carousel for promises quality - done
 - apply style promises images and texts - done
 
-2.  Testimonial <-- next
+2.  Testimonial
 
+- create file with review data - done
+- create component for testimony <-- next
+- create component for each review card
 - automatic carousel
 
 3. Contact me
