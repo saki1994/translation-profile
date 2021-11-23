@@ -24,7 +24,8 @@
 
 - add upload images -- done
 - create component for contact done
-- create component with icon and link account <-- next
+- create component with icon and link account done
+- style Contact me component <-- next
 
 4. Footer
 
