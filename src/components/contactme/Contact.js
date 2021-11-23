@@ -3,9 +3,9 @@ import { Link, ListItemButton } from "@mui/material";
 
 const Contact = ({ link, img, text }) => {
   return (
-    <ListItemButton>
+    <ListItemButton className="links">
       <Link href={link}>
-        <img src={img} alt={text} />
+        <img className={text} src={img} alt={text} />
       </Link>
     </ListItemButton>
   );

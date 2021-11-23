@@ -22,12 +22,12 @@
 
 3. Contact me
 
-- add upload images -- done
-- create component for contact done
-- create component with icon and link account done
-- style Contact me component <-- next
+- add upload images - done
+- create component for contact - done
+- create component with icon and link account - done
+- style Contact me component - done
 
-4. Footer
+4. Footer <-- next
 
 - copyrights
 
