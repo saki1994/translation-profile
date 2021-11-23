@@ -23,8 +23,8 @@
 3. Contact me
 
 - add upload images -- done
-- create component for contact <-- next
-- create component with icon and link account
+- create component for contact done
+- create component with icon and link account <-- next
 
 4. Footer
 
