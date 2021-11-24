@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 
 const Services = ({ photo, title, body }) => {
   return (
-    <Card className="offer-div promise-div">
+    <Card className=" promise-div">
       <CardMedia component="img" height="120" image={photo} alt={title} />
       <CardContent className="card-text-div">
         <Typography

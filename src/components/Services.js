@@ -2,14 +2,13 @@ import React from "react";
 import services, { promises } from "../services-data";
 import Service from "./services/Service";
 import "../stylesheet/Services/Services.scss";
-import Stack from "@mui/material/Stack";
 import Carousel from "react-bootstrap/Carousel";
 
 const Services = () => {
   return (
-    <div className="services" id="services">
+    <div id="services">
       <h3>Services</h3>
-      <Stack className="services-offer mobile">
+      <div id="services-offer">
         {services.english.map((card, index) => {
           return (
             <Service
@@ -20,16 +19,18 @@ const Services = () => {
             />
           );
         })}
-      </Stack>
-      <Carousel controls={false} variant="dark" className="promises">
-        {promises.english.map((promise, index) => {
-          return (
-            <Carousel.Item>
-              <Service key={index} photo={promise.img} body={promise.title} />
-            </Carousel.Item>
-          );
-        })}
-      </Carousel>
+      </div>
+      <div className="promises">
+        <Carousel variant="dark">
+          {promises.english.map((promise, index) => {
+            return (
+              <Carousel.Item>
+                <Service key={index} photo={promise.img} body={promise.title} />
+              </Carousel.Item>
+            );
+          })}
+        </Carousel>
+      </div>
     </div>
   );
 };

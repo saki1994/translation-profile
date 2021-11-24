@@ -5,6 +5,7 @@
   background-color: $border-color;
   color: #37322d;
   text-align: center;
+  font-family: $text-font;
 
   h3 {
     margin-bottom: 2rem;
@@ -30,6 +31,7 @@
     width: 60%;
     margin: auto;
     margin-top: 2rem;
+    line-height: 2em;
   }
 }
 

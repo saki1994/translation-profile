@@ -8,25 +8,6 @@
 
 #### Mobile design -- done
 
-#### Browser and Tablet version
+#### Browser and Tablet version -- done
 
-1. Navbar
-
-- change navbar layout - done
-- style - done
-
-2. Home
-
-- re arrange - done
-- style - done
-
-3. About
-
-- rearrange -done
-- style - done
-
-4. Services <-- next
-
-5. Testimony
-
-6. Contact
+### deploy and check style

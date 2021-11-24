@@ -11,7 +11,7 @@ const Contacts = () => {
     <div className="contact" id="contact">
       <h3>Contact</h3>
       <Typography className="contact-text">
-        You can contact / hire me @
+        For pricing, contact me @
       </Typography>
       <List className="contact-icon">
         <Contact

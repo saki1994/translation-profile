@@ -8,13 +8,13 @@ import confidential from "./images/confidential.PNG";
 const services = {
   english: [
     {
-      img: document,
-      title: "Website / Product Translation",
+      img: website,
+      title: "Product Translation",
       text:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a arcu vestibulum, fringilla est non, scelerisque enim."
     },
     {
-      img: website,
+      img: document,
       title: "Document Translation",
       text:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a arcu vestibulum, fringilla est non, scelerisque enim."
