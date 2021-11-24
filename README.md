@@ -17,8 +17,8 @@
 
 2. Home
 
-- re arrange
-- style
+- re arrange <-- next
+- style - done
 
 3. About
 

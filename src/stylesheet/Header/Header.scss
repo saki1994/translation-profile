@@ -1,24 +1,39 @@
 @import "../variables";
 
-header {
+#header {
   font-family: $header-font;
+  padding: 15%;
+  background-image: url("../../images/bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: $bg-color;
+  margin: 0;
+
+  & > * {
+    width: fit-content;
+    letter-spacing: 1px;
+  }
 
   h1 {
     color: $text-color;
+    padding-left: 2rem;
   }
 
   h2 {
     color: $light-grey;
+    padding-left: 10rem;
   }
 }
 
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
 @media (max-width: 700px) {
-  header {
+  #header {
     padding: 25% 7%;
-    background-image: url("../../images/bg.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
 
     & > * {
       margin: 0;
