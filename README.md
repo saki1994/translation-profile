@@ -13,9 +13,12 @@
 1. Navbar
 
 - change navbar layout - done
-- style
+- style - done
 
 2. Home
+
+- re arrange
+- style
 
 3. About
 

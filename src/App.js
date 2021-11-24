@@ -9,10 +9,8 @@ import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
-    <> 
-        <nav>
-          <Navbar />
-        </nav>
+    <>  
+          <Navbar /> 
 
         <header>
           <Home />

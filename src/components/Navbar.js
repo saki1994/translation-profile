@@ -3,13 +3,13 @@ import "../stylesheet/Navbar/Navbar.scss";
 import polishFlag from "../images/pl-flag.png";
 import britishFlag from "../images/gb-flag.png";
 import danishFlag from "../images/dk-flag.png";
-import { Box, List } from "@mui/material";
+import { List } from "@mui/material";
 import NavFlag from "./navbar/NavFlag.js";
 import NavLink from "./navbar/NavLink.js";
 
 const Navbar = () => {
   return (
-    <Box className="navbar nav-mobile">
+    <nav id="navbar" className="navbar nav-mobile">
       <List className="languages">
         <NavFlag photo={polishFlag} alt="polish-flag" />
         <NavFlag photo={britishFlag} alt="british-flag" />
@@ -21,7 +21,7 @@ const Navbar = () => {
         <NavLink link="#testimony" text="Testimony" />
         <NavLink link="#contact" text="Contact" />
       </List>
-    </Box>
+    </nav>
   );
 };
 

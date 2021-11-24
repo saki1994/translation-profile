@@ -1,22 +1,21 @@
 @import "../variables";
 
-nav {
+#navbar {
   @include display(flex, row);
-  padding-top: 30px;
   background-color: $bg-color;
+  font-family: $text-font;
+  padding: 1.5rem 1rem 0 1rem;
+  position: sticky;
+  top: 0;
 
   ul {
-    margin: 0;
-    padding: 0;
-
     li {
       list-style-type: none;
     }
 
     &:first-child {
-      padding: 1%;
       justify-content: center;
-      @include display(flex, row, 60px);
+      @include display(flex, row, 10px);
 
       img {
         @include img-size(30px, 30px);
@@ -25,10 +24,24 @@ nav {
       }
     }
   }
+  .nav-links {
+    @include display(flex, row, 25px);
+    padding-right: 1.5em;
+
+    a {
+      color: #37322d;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        color: #7c776a;
+      }
+    }
+  }
 }
 
 @media (max-width: 700px) {
-  .navbar {
+  #navbar {
     @include display(flex, column, 30px);
     z-index: 1;
 
