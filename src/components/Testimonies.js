@@ -5,7 +5,7 @@ import "../stylesheet/Testimony/testimony.scss";
 
 const Testimonies = () => {
   return (
-    <div className="testimony">
+    <div className="testimony" id="testimony">
       <h3>Testimony</h3>
 
       <div className="review-box">

@@ -7,7 +7,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 const Services = () => {
   return (
-    <div className="services">
+    <div className="services" id="services">
       <h3>Services</h3>
       <Stack className="services-offer mobile">
         {services.english.map((card, index) => {

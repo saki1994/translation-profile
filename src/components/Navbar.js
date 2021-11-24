@@ -3,28 +3,25 @@ import "../stylesheet/Navbar/Navbar.scss";
 import polishFlag from "../images/pl-flag.png";
 import britishFlag from "../images/gb-flag.png";
 import danishFlag from "../images/dk-flag.png";
+import { Box, List } from "@mui/material";
+import NavFlag from "./navbar/NavFlag.js";
+import NavLink from "./navbar/NavLink.js";
 
 const Navbar = () => {
   return (
-    <nav className="navbar nav-mobile">
-      <ul className="languages">
-        <li>
-          <img src={polishFlag} alt="polish-flag" />
-        </li>
-        <li>
-          <img src={britishFlag} alt="british-flag" />
-        </li>
-        <li>
-          <img src={danishFlag} alt="danish-flag" />
-        </li>
-      </ul>
-      <ul className="nav-links">
-        <li>Home</li>
-        <li>Services</li>
-        <li>Testimonials</li>
-        <li>Contact </li>
-      </ul>
-    </nav>
+    <Box className="navbar nav-mobile">
+      <List className="languages">
+        <NavFlag photo={polishFlag} alt="polish-flag" />
+        <NavFlag photo={britishFlag} alt="british-flag" />
+        <NavFlag photo={danishFlag} alt="danish-flag" />
+      </List>
+      <List className="nav-links">
+        <NavLink link="#home" text="Home" />
+        <NavLink link="#services" text="Services" />
+        <NavLink link="#testimony" text="Testimony" />
+        <NavLink link="#contact" text="Contact" />
+      </List>
+    </Box>
   );
 };
 

@@ -12,6 +12,9 @@
 
 1. Navbar
 
+- change navbar layout - done
+- style
+
 2. Home
 
 3. About

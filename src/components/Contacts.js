@@ -8,7 +8,7 @@ import "../stylesheet/Contact/contact.scss";
 
 const Contacts = () => {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <h3>Contact</h3>
       <Typography className="contact-text">
         You can contact / hire me @
