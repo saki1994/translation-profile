@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Rating from "@mui/material/Rating";
 import Box from "@mui/material/Box";
 
-const Testimony = ({ review, name, company }) => {
+const Review = ({ review, name, company }) => {
   return (
     <Card className="review-card">
       <CardContent>
@@ -41,4 +41,4 @@ const Testimony = ({ review, name, company }) => {
   );
 };
 
-export default Testimony;
+export default Review;

@@ -1,6 +1,6 @@
 import React from "react";
 import reviews from "../review-data";
-import Testimony from "./testimony/Testimony";
+import Review from "./Review";
 import "../stylesheet/Testimony/testimony.scss";
 
 const Testimonies = () => {
@@ -11,7 +11,7 @@ const Testimonies = () => {
       <div className="review-box">
         {reviews.english.map((review, index) => {
           return (
-            <Testimony
+            <Review
               key={index}
               review={review.review}
               name={review.name}
