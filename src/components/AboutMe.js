@@ -4,10 +4,10 @@ import "../stylesheet/About/AboutMe.scss";
 
 const AboutMe = () => {
   return (
-    <div className="about-me">
+    <div id="about-me">
       <h3>About Me</h3>
       <img src={profile} alt="profile-pic" />
-      <div className="profile">
+      <div className="profile-info">
         <p>
           <span>Name: </span>Deniz Atici
         </p>
@@ -15,10 +15,10 @@ const AboutMe = () => {
           <span>Location: </span>Szczecin, Poland
         </p>
       </div>
-      <p>
+      <p className="description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at diam
         augue. Mauris porttitor est vitae libero tempus, id feugiat ipsum
-        tincidunt. Fu amet diam fringilla, viverra purus ac, sollicitudin est.{" "}
+        tincidunt. Fu amet diam fringilla, viverra purus ac, sollicitudin est.
       </p>
     </div>
   );

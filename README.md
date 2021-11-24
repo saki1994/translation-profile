@@ -17,12 +17,15 @@
 
 2. Home
 
-- re arrange <-- next
+- re arrange - done
 - style - done
 
 3. About
 
-4. Services
+- rearrange -done
+- style - done
+
+4. Services <-- next
 
 5. Testimony
 
