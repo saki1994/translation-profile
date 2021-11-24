@@ -6,29 +6,18 @@
 
 ### What to do.
 
-#### Mobile design
-
-1.  Services
-
-- carousel for promises quality - done
-- apply style promises images and texts - done
-
-2.  Testimonial
-
-- create file with review data - done
-- create component for testimony - done
-- create component for each review card - done
-- add style to each testimony - done
-
-3. Contact me
-
-- add upload images - done
-- create component for contact - done
-- create component with icon and link account - done
-- style Contact me component - done
-
-4. Footer <-- next
-
-- copyrights
+#### Mobile design -- done
 
 #### Browser and Tablet version
+
+1. Navbar
+
+2. Home
+
+3. About
+
+4. Services
+
+5. Testimony
+
+6. Contact
