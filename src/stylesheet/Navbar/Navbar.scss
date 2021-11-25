@@ -43,12 +43,13 @@
 
 @media (max-width: 700px) {
   #navbar {
-    @include display(flex, column, 30px);
+    @include display(flex, column, 15px);
     z-index: 1;
+    padding: 10px 0 0 0;
 
     ul:nth-child(2) {
       max-width: 100%;
-      @include display(flex, row, 50px);
+      @include display(flex, row, 30px);
       font-size: 15px;
     }
   }
