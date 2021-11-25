@@ -16,8 +16,8 @@
 
 1. Home & Header - done
 
-2. Services <-- next
+2. Services - done
 
-3. Testimony
+3. Testimony <-- next
 
 4. Contact & Footer
