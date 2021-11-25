@@ -10,4 +10,14 @@
 
 #### Browser and Tablet version -- done
 
-### deploy and check style
+### deploy and check style -- done
+
+### create data in PL, EN and DK
+
+1. Home & Header
+
+2. Services
+
+3. Testimony
+
+4. Contact & Footer
