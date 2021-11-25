@@ -14,9 +14,9 @@
 
 ### create data in PL, EN and DK
 
-1. Home & Header
+1. Home & Header - done
 
-2. Services
+2. Services <-- next
 
 3. Testimony
 
