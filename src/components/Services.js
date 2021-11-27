@@ -9,7 +9,7 @@ const Services = () => {
     <div id="services">
       <h3>Services</h3>
       <div id="services-offer">
-        {services.polish.map((card, index) => {
+        {services.english.map((card, index) => {
           return (
             <Service
               key={index}
@@ -22,7 +22,7 @@ const Services = () => {
       </div>
       <div className="promises">
         <Carousel variant="dark">
-          {promises.polish.map((promise, index) => {
+          {promises.english.map((promise, index) => {
             return (
               <Carousel.Item>
                 <Service key={index} photo={promise.img} body={promise.title} />

@@ -24,6 +24,11 @@ const services = {
       title: "Transcriber",
       text:
         "I transcribe audio/movies and produce documents quickly and accurately."
+    },
+    {
+      img: person,
+      title: "Person to Person",
+      text: "I can help translating document on phone or personal."
     }
   ],
   danish: [

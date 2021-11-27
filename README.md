@@ -18,6 +18,6 @@
 
 2. Services - done
 
-3. Testimony <-- next
+3. Testimony - done
 
-4. Contact & Footer
+4. Contact & Footer <-- next
