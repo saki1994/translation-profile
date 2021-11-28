@@ -18,8 +18,8 @@
 
 - create diff file for data and import it
 
-2. About <-- next
+2. About <-- done
 
 - create diff file for data and import it
 
-3. Services - done
+3. Services <-- next
