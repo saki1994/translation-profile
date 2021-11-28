@@ -16,4 +16,6 @@
 
 1. Home & Header - done
 
-2. About <-- next
+2. About - done
+
+3. Services - what we offer <-- next

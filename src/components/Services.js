@@ -4,7 +4,7 @@ import Service from "./services/Service";
 import "../stylesheet/Services/Services.scss";
 import Carousel from "react-bootstrap/Carousel";
 
-const Services = () => {
+const Services = ({ language }) => {
   return (
     <div id="services">
       <h3>Services</h3>

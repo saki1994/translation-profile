@@ -11,8 +11,7 @@ import AboutMe from "./components/AboutMe";
 import { List, ListItem } from "@mui/material"; 
 import polishFlag from "./images/pl-flag.png";
 import britishFlag from "./images/gb-flag.png";
-import danishFlag from "./images/dk-flag.png";
-import { workTitle } from "./home-data";
+import danishFlag from "./images/dk-flag.png"; 
 
 
 function App() {
