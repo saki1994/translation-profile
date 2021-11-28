@@ -1,11 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../stylesheet/Header/Header.scss";
 
-const Home = () => {
+const Home = ({ language }) => {
+  const [title, setTitle] = useState("Your translator...");
+  const [name, setName] = useState("Hi, I am Deniz");
+
+  const setHomeText = (name, title) => {
+    setTitle(title);
+    setName(name);
+  };
+
+  useEffect(
+    () => {
+      if (language === "danish") {
+        setHomeText("Hej, jeg hedder Deniz", "Din oversætter...");
+      } else if (language === "polish") {
+        setHomeText("Cześć, Jestem Deniz", "Twój tłumacz...");
+      } else {
+        setHomeText("Hi, I am Deniz", "Your translator...");
+      }
+    },
+    [language]
+  );
   return (
     <div id="header">
-      <h1>Hi, I'm Deniz</h1>
-      <h2>your translator...</h2>
+      <h1>
+        {name}
+      </h1>
+      <h2>
+        {title}
+      </h2>
     </div>
   );
 };

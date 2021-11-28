@@ -12,6 +12,8 @@ import { List, ListItem } from "@mui/material";
 import polishFlag from "./images/pl-flag.png";
 import britishFlag from "./images/gb-flag.png";
 import danishFlag from "./images/dk-flag.png";
+import { workTitle } from "./home-data";
+
 
 function App() {
 
@@ -19,9 +21,7 @@ function App() {
 
 
   const changeLanguage = (e) => {
-    setCurrentLanguage(e.target.name);
-
-    console.log(currentLanguage)
+    setCurrentLanguage(e.target.name);    
   };
 
 
@@ -40,23 +40,23 @@ function App() {
     </ListItem>
     
       </List>
-    <Navbar /> 
+    <Navbar language={currentLanguage} /> 
     </nav>
          
 
     <header id="home">
-        <Home />
-        <AboutMe />
+        <Home language={currentLanguage} />
+        <AboutMe language={currentLanguage}/>
     </header>
 
     <main>
-          <Services/>
-          <Testimonies />
-          <Contacts />
+          <Services language={currentLanguage} />
+          <Testimonies language={currentLanguage} />
+          <Contacts language={currentLanguage} />
     </main>
 
     <footer>
-          <Footer />
+          <Footer language={currentLanguage} />
     </footer>
       </> 
   );

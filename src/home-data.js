@@ -1,15 +1,3 @@
-const navBar = {
-  english: ["Home", "Services", "Testimony", "Contact"],
-  danish: ["Hjem", "Tjenester", "Vidnesbyrd", "Kontakt"],
-  polish: ["Dom", "Usługi", "Świadectwo", "Kontakt"]
-};
-
-const workTitle = {
-  english: "Your translator...",
-  danish: "Din oversætter...",
-  polish: "Twój tłumacz..."
-};
-
 const about = {
   english: [
     {
@@ -41,5 +29,4 @@ const about = {
     }
   ]
 };
-export default navBar;
-export { workTitle, about };
+export { about };
