@@ -14,7 +14,7 @@
 
 ### create and apply data in PL, EN and DK
 
-1. Home & Header <-- next
+1. Home & Header <-- done
 
 - create diff file for data and import it
 

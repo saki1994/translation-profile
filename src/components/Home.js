@@ -1,23 +1,18 @@
 import React, { useEffect, useState } from "react";
+import { headerData } from "../home-data.js";
 import "../stylesheet/Header/Header.scss";
 
 const Home = ({ language }) => {
-  const [title, setTitle] = useState("Your translator...");
-  const [name, setName] = useState("Hi, I am Deniz");
-
-  const setHomeText = (name, title) => {
-    setTitle(title);
-    setName(name);
-  };
+  const [headerInfo, setHeader] = useState(headerData.english);
 
   useEffect(
     () => {
       if (language === "danish") {
-        setHomeText("Hej, jeg hedder Deniz", "Din oversætter...");
+        setHeader(headerData.danish);
       } else if (language === "polish") {
-        setHomeText("Cześć, Jestem Deniz", "Twój tłumacz...");
+        setHeader(headerData.polish);
       } else {
-        setHomeText("Hi, I am Deniz", "Your translator...");
+        setHeader(headerData.english);
       }
     },
     [language]
@@ -25,10 +20,10 @@ const Home = ({ language }) => {
   return (
     <div id="header">
       <h1>
-        {name}
+        {headerInfo.name}
       </h1>
       <h2>
-        {title}
+        {headerInfo.workTitle}
       </h2>
     </div>
   );
