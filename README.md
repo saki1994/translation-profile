@@ -14,8 +14,12 @@
 
 ### create and apply data in PL, EN and DK
 
-1. Home & Header - done
+1. Home & Header <-- next
 
-2. About - done
+- create diff file for data and import it
 
-3. Services - what we offer <-- next
+2. About <-- next
+
+- create diff file for data and import it
+
+3. Services - done
