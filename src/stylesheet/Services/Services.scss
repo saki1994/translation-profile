@@ -43,6 +43,10 @@
 .promises {
   margin-top: 3em;
 
+  &:first-child {
+    z-index: -1;
+    position: relative;
+  }
   .promise-div {
     background: transparent;
     margin: auto;

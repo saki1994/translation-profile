@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Typography, List } from "@mui/material";
 import upwork from "../images/upwork.png";
 import whatsapp from "../images/whatsapp.png";
@@ -6,12 +6,51 @@ import email from "../images/email.png";
 import Contact from "./contactme/Contact";
 import "../stylesheet/Contact/contact.scss";
 
-const Contacts = () => {
+const Contacts = ({ language }) => {
+  const [contactText, setContactText] = useState({
+    header: "Contact",
+    pricing: "For pricing, contact me @",
+    phone: "or call me @"
+  });
+
+  const changeLanguage = (header, pricing, phone) => {
+    setContactText(previous => {
+      return {
+        header: header,
+        pricing: pricing,
+        phone: phone
+      };
+    });
+  };
+
+  useEffect(
+    () => {
+      if (language === "danish") {
+        changeLanguage(
+          "Kontakt",
+          "For pris, kontakt mig @",
+          "eller ring til mig @ "
+        );
+      } else if (language === "polish") {
+        changeLanguage(
+          "Kontakt",
+          "W sprawie wyceny skontaktuj się ze mną @",
+          "lub zadzwoń @"
+        );
+      } else {
+        changeLanguage("Contact", "For pricing, contact me @", "or call me @");
+      }
+    },
+    [language]
+  );
+
   return (
     <div className="contact" id="contact">
-      <h3>Contact</h3>
+      <h3>
+        {contactText.header}
+      </h3>
       <Typography className="contact-text">
-        For pricing, contact me @
+        {contactText.pricing}
       </Typography>
       <List className="contact-icon">
         <Contact
@@ -26,7 +65,9 @@ const Contacts = () => {
           text="email"
         />
       </List>
-      <Typography className="contact-text">or call me @</Typography>
+      <Typography className="contact-text">
+        {contactText.phone}
+      </Typography>
       <Typography className="contact-text">+48 123 456 789</Typography>
     </div>
   );

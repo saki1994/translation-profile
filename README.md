@@ -24,4 +24,8 @@
 
 3. Services - done
 
-4. Testimony <-- next
+4. Testimony - done
+
+5. Contact - done
+
+6. Footer <-- next
