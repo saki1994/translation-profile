@@ -3,24 +3,27 @@ import aboutData from "../home-data.js";
 import profile from "../images/profile-photo.PNG";
 import "../stylesheet/About/AboutMe.scss";
 
-const AboutMe = ({ language }) => {
+const AboutMe = ({ language, newClassStyle, removeStyle }) => {
   const [aboutMeData, setAboutMeData] = useState(aboutData.english);
 
   useEffect(
     () => {
       if (language === "danish") {
         setAboutMeData(aboutData.danish);
+        removeStyle();
       } else if (language === "polish") {
         setAboutMeData(aboutData.polish);
+        removeStyle();
       } else {
         setAboutMeData(aboutData.english);
+        removeStyle();
       }
     },
-    [language]
+    [language, removeStyle]
   );
   return (
     <div id="about-me">
-      <h3>
+      <h3 className={newClassStyle}>
         {aboutMeData.header}
       </h3>
       <img src={profile} alt="profile-pic" />

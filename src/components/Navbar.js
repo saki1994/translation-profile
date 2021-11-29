@@ -8,6 +8,13 @@ const Navbar = ({ language }) => {
   const [services, setServices] = useState("Services");
   const [testimony, setTestimony] = useState("Testimony");
   const [contact, setContact] = useState("Contact");
+  const [addStyle, setAddStyle] = useState("");
+
+  const removeStyle = () => {
+    return setTimeout(function() {
+      setAddStyle("");
+    }, 1000);
+  };
 
   const setNavbar = (home, services, testimony, contact) => {
     setHome(home);
@@ -16,18 +23,27 @@ const Navbar = ({ language }) => {
     setContact(contact);
   };
 
-  useEffect(() => {
-    if (language === "danish") {
-      setNavbar("Hjem", "Tjenester", "Vidnesbyrd", "Kontakt");
-    } else if (language === "polish") {
-      setNavbar("Dom", "Usługi", "Świadectwo", "Kontakt");
-    } else {
-      setNavbar("Home", "Services", "Testimony", "Contact");
-    }
-  });
+  useEffect(
+    () => {
+      if (language === "danish") {
+        setNavbar("Hjem", "Tjenester", "Vidnesbyrd", "Kontakt");
+        setAddStyle("add-animation");
+        removeStyle();
+      } else if (language === "polish") {
+        setNavbar("Dom", "Usługi", "Świadectwo", "Kontakt");
+        setAddStyle("add-animation");
+        removeStyle();
+      } else {
+        setNavbar("Home", "Services", "Testimony", "Contact");
+        setAddStyle("add-animation");
+        removeStyle();
+      }
+    },
+    [language]
+  );
 
   return (
-    <List className="nav-links">
+    <List className={`nav-links ${addStyle}`}>
       <NavLink link="#home" text={home} />
       <NavLink link="#services" text={services} />
       <NavLink link="#testimony" text={testimony} />

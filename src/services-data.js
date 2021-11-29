@@ -49,6 +49,12 @@ const services = {
       title: "Transskriberen",
       text:
         "Jeg transskriberer lyd/film og producerer dokumenter hurtigt og præcist."
+    },
+    {
+      img: person,
+      title: "Person til person",
+      text:
+        "Jeg kan hjælpe med at oversætte dokument på telefon eller personligt."
     }
   ],
   polish: [
@@ -68,6 +74,11 @@ const services = {
       img: person,
       title: "Transkrybent",
       text: "Przepisuję audio/filmy oraz szybko i dokładnie tworzę dokumenty."
+    },
+    {
+      img: person,
+      title: "Osoba do osoby",
+      text: "Pomogę w tłumaczeniu dokumentu telefonicznie lub osobiście."
     }
   ]
 };

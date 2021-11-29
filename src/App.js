@@ -17,10 +17,18 @@ import danishFlag from "./images/dk-flag.png";
 function App() {
 
   const [currentLanguage, setCurrentLanguage] = useState('english');
+  const [addStyle, setAddStyle] = useState("");
 
+ 
+  const removeStyle = () => {
+    return setTimeout(function() {
+      setAddStyle("");
+    }, 1000);
+  };
 
   const changeLanguage = (e) => {
     setCurrentLanguage(e.target.name);    
+    setAddStyle("style-sample")
   };
 
 
@@ -45,7 +53,7 @@ function App() {
 
     <header id="home">
         <Home language={currentLanguage} />
-        <AboutMe language={currentLanguage}/>
+        <AboutMe language={currentLanguage} newClassStyle={addStyle} removeStyle={removeStyle} />
     </header>
 
     <main>

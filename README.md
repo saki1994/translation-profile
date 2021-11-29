@@ -28,4 +28,6 @@
 
 5. Contact - done
 
-6. Footer <-- next
+6. Footer - done
+
+7. apply animation for each text <-- next
