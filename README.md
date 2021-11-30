@@ -21,8 +21,8 @@
 9. main > testimony - JSX file - DONE
 10. main > testimony - stylesheet - DONE
 
-11. main > contact - JSX file
-12. main > testimony - stylesheet
+11. main > contact - JSX file - DONE
+12. main > testimony - stylesheet - DONE
 
 13. App - JSX file
 14. APP - stylesheet

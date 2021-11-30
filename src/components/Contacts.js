@@ -21,6 +21,7 @@ const Contacts = ({ language, boxAnimation, removeStyle }) => {
         phone: phone
       };
     });
+    removeStyle();
   };
 
   useEffect(
@@ -31,20 +32,18 @@ const Contacts = ({ language, boxAnimation, removeStyle }) => {
           "For pris, kontakt mig @",
           "eller ring til mig @ "
         );
-        removeStyle();
       } else if (language === "polish") {
         changeLanguage(
           "Kontakt",
           "W sprawie wyceny skontaktuj się ze mną @",
           "lub zadzwoń @"
         );
-        removeStyle();
       } else {
         changeLanguage("Contact", "For pricing, contact me @", "or call me @");
-        removeStyle();
       }
     },
-    [language, removeStyle]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [language]
   );
 
   return (

@@ -1,19 +1,18 @@
+@import "../variables";
+
 #contact {
   text-align: center;
   padding: 7%;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  @include display(flex, column, 30px);
 
   .contact-text,
   h3 {
-    font-family: "Montserrat", sans-serif;
-    color: #37322d;
+    font-family: $text-font;
+    color: $text-color;
   }
 
   .contact-icon {
-    display: flex;
-    flex-direction: row;
+    @include display(flex, row, auto);
     width: 60%;
     margin: auto;
 
@@ -24,24 +23,22 @@
     }
 
     .whatsapp {
-      height: 40px;
-      width: 100px;
+      @include img-size(100px, 40px);
     }
 
     .upwork {
-      width: 80px;
-      height: 25px;
+      @include img-size(80px, 25px);
     }
 
     .email {
-      width: 90px;
-      height: 25px;
+      @include img-size(90px, 25px);
     }
   }
 }
 
 @media (max-width: 700px) {
   #contact {
+    padding-top: 5em;
     .contact-icon {
       width: 100%;
     }
