@@ -4,41 +4,22 @@
 
 - (canva)[https://www.canva.com/design/DAEmuemsSps/mTZ6jZJPBXIF39T1W-2KWQ/edit]
 
-### What to do.
+### Refactor
 
-#### Mobile design -- done
+1. Navbar - JSX file
+2. Navbar - stylesheet
 
-#### Browser and Tablet version -- done
+3. Home > Header - JSX file
+4. Home > Header - stylesheet
 
-### deploy and check style -- done
+5. Home > About me - JSX file
+6. Home > About me - stylesheet
 
-### create and apply data in PL, EN and DK
+7. main > Services - JSX file
+8. main > Services - stylesheet
 
-1. Home & Header <-- done
+9. main > testimony - JSX file
+10. main > testimony - stylesheet
 
-- create diff file for data and import it
-
-2. About <-- done
-
-- create diff file for data and import it
-
-3. Services - done
-
-4. Testimony - done
-
-5. Contact - done
-
-6. Footer - done
-
-7. apply animation for each text - done
-
-8. add header to services data - done
-
-9. Deploy <-- next
-
-### Problem
-
-1. mobile version - iphone12
-   - header text 'i am deniz' in danish and polish looks weird. - fixed
-   - contact icons push to right - fixed
-   - navbar is not centered. - fixed
+11. main > contact - JSX file
+12. main > testimony - stylesheet
