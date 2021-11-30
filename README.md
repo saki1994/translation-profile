@@ -35,3 +35,10 @@
 8. add header to services data - done
 
 9. Deploy <-- next
+
+### Problem
+
+1. mobile version - iphone12
+   - header text 'i am deniz' in danish and polish looks weird. - fixed
+   - contact icons push to right - fixed
+   - navbar is not centered. - fixed

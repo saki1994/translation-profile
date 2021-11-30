@@ -52,6 +52,7 @@
       max-width: 100%;
       @include display(flex, row, 30px);
       font-size: 15px;
+      padding: 0 0 5px 0;
     }
   }
 }
