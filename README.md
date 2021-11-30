@@ -30,4 +30,6 @@
 
 6. Footer - done
 
-7. apply animation for each text <-- next
+7. apply animation for each text - partiall done
+
+8. add header to services data <-- next

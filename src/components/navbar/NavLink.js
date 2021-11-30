@@ -1,6 +1,6 @@
 import React from "react";
 
-const NavLink = ({ link, text, addStyle }) => {
+const NavLink = ({ link, text }) => {
   return (
     <a href={link}>
       {text}

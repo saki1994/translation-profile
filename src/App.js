@@ -28,7 +28,7 @@ function App() {
 
   const changeLanguage = (e) => {
     setCurrentLanguage(e.target.name);    
-    setAddStyle("style-sample")
+    setAddStyle("text-animation");
   };
 
 
@@ -45,25 +45,24 @@ function App() {
     <ListItem>
       <img onClick={changeLanguage} src={danishFlag} alt="danish-flag" name="danish" />
     </ListItem>
-    
       </List>
-    <Navbar language={currentLanguage} /> 
+    <Navbar language={currentLanguage} newClassStyle={addStyle} removeStyle={removeStyle}  /> 
     </nav>
          
 
     <header id="home">
-        <Home language={currentLanguage} />
+        <Home language={currentLanguage} newClassStyle={addStyle} removeStyle={removeStyle} />
         <AboutMe language={currentLanguage} newClassStyle={addStyle} removeStyle={removeStyle} />
     </header>
 
     <main>
           <Services language={currentLanguage} />
           <Testimonies language={currentLanguage} />
-          <Contacts language={currentLanguage} />
+          <Contacts language={currentLanguage} newClassStyle={addStyle} removeStyle={removeStyle}/>
     </main>
 
     <footer>
-          <Footer language={currentLanguage} />
+          <Footer language={currentLanguage} newClassStyle={addStyle} removeStyle={removeStyle}  />
     </footer>
       </> 
   );

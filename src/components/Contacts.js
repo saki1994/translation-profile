@@ -6,7 +6,7 @@ import email from "../images/email.png";
 import Contact from "./contactme/Contact";
 import "../stylesheet/Contact/contact.scss";
 
-const Contacts = ({ language }) => {
+const Contacts = ({ language, newClassStyle, removeStyle }) => {
   const [contactText, setContactText] = useState({
     header: "Contact",
     pricing: "For pricing, contact me @",
@@ -31,25 +31,28 @@ const Contacts = ({ language }) => {
           "For pris, kontakt mig @",
           "eller ring til mig @ "
         );
+        removeStyle();
       } else if (language === "polish") {
         changeLanguage(
           "Kontakt",
           "W sprawie wyceny skontaktuj się ze mną @",
           "lub zadzwoń @"
         );
+        removeStyle();
       } else {
         changeLanguage("Contact", "For pricing, contact me @", "or call me @");
+        removeStyle();
       }
     },
-    [language]
+    [language, removeStyle]
   );
 
   return (
-    <div className="contact" id="contact">
+    <div className={newClassStyle} id="contact">
       <h3>
         {contactText.header}
       </h3>
-      <Typography className="contact-text">
+      <Typography className={`contact-text  ${newClassStyle}`}>
         {contactText.pricing}
       </Typography>
       <List className="contact-icon">
@@ -65,10 +68,12 @@ const Contacts = ({ language }) => {
           text="email"
         />
       </List>
-      <Typography className="contact-text">
+      <Typography className={`contact-text  ${newClassStyle}`}>
         {contactText.phone}
       </Typography>
-      <Typography className="contact-text">+48 123 456 789</Typography>
+      <Typography className={`contact-text  ${newClassStyle}`}>
+        +48 123 456 789
+      </Typography>
     </div>
   );
 };

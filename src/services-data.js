@@ -108,7 +108,7 @@ const promises = {
       title: "Hurtigt og til tiden"
     },
     {
-      img: "Fortroligt",
+      img: confidential,
       title: "Fortrolighed"
     }
   ],

@@ -3,18 +3,11 @@ import "../stylesheet/Navbar/Navbar.scss";
 import NavLink from "./navbar/NavLink.js";
 import { List } from "@mui/material";
 
-const Navbar = ({ language }) => {
+const Navbar = ({ language, newClassStyle, removeStyle }) => {
   const [home, setHome] = useState("Home");
   const [services, setServices] = useState("Services");
   const [testimony, setTestimony] = useState("Testimony");
   const [contact, setContact] = useState("Contact");
-  const [addStyle, setAddStyle] = useState("");
-
-  const removeStyle = () => {
-    return setTimeout(function() {
-      setAddStyle("");
-    }, 1000);
-  };
 
   const setNavbar = (home, services, testimony, contact) => {
     setHome(home);
@@ -27,23 +20,20 @@ const Navbar = ({ language }) => {
     () => {
       if (language === "danish") {
         setNavbar("Hjem", "Tjenester", "Vidnesbyrd", "Kontakt");
-        setAddStyle("add-animation");
         removeStyle();
       } else if (language === "polish") {
         setNavbar("Dom", "Usługi", "Świadectwo", "Kontakt");
-        setAddStyle("add-animation");
         removeStyle();
       } else {
         setNavbar("Home", "Services", "Testimony", "Contact");
-        setAddStyle("add-animation");
         removeStyle();
       }
     },
-    [language]
+    [language, removeStyle]
   );
 
   return (
-    <List className={`nav-links ${addStyle}`}>
+    <List className={`nav-links ${newClassStyle}`}>
       <NavLink link="#home" text={home} />
       <NavLink link="#services" text={services} />
       <NavLink link="#testimony" text={testimony} />
