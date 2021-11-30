@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../stylesheet/Header/Header.scss";
+import "../stylesheet/Home/home.scss";
 
 const Footer = ({ language, addTextStyle, removeStyle }) => {
   const [footerText, setFooterText] = useState(

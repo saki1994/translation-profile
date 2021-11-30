@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import "./stylesheet/App/App.scss";
-import "./stylesheet/Header/Header.scss";
+import "./stylesheet/Home/home.scss";
 import Navbar from "./components/Navbar";
 import Home from './components/Home';
 import Services from "./components/Services";

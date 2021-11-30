@@ -9,8 +9,8 @@
 1. Navbar - JSX file - DONE
 2. Navbar - stylesheet - DONE
 
-3. Home > Header - JSX file
-4. Home > Header - stylesheet
+3. Home > Header - JSX file - DONE
+4. Home > Header - stylesheet - DONE
 
 5. Home > About me - JSX file
 6. Home > About me - stylesheet

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { headerData } from "../home-data.js";
-import "../stylesheet/Header/Header.scss";
+import "../stylesheet/Home/home.scss";
 
 const Home = ({ language, newClassStyle, removeStyle }) => {
   const [headerInfo, setHeader] = useState(headerData.english);
