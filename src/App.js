@@ -15,12 +15,9 @@ import danishFlag from "./images/dk-flag.png";
 
 
 function App() {
-
   const [currentLanguage, setCurrentLanguage] = useState('english');
   const [addTextStyle, setAddTextStyle] = useState("");
   const [addBoxStyle, setAddBoxStyle] = useState("");
-
-
  
   const removeStyle = () => {
     return setTimeout(function() {

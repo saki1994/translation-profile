@@ -4,25 +4,10 @@
 
 - (canva)[https://www.canva.com/design/DAEmuemsSps/mTZ6jZJPBXIF39T1W-2KWQ/edit]
 
-### Refactor
+### Remainint to do
 
-1. Navbar - JSX file - DONE
-2. Navbar - stylesheet - DONE
-
-3. Home > Header - JSX file - DONE
-4. Home > Header - stylesheet - DONE
-
-5. Home > About me - JSX file - DONE
-6. Home > About me - stylesheet - DONE
-
-7. main > Services - JSX file - DONE
-8. main > Services - stylesheet - DONE
-
-9. main > testimony - JSX file - DONE
-10. main > testimony - stylesheet - DONE
-
-11. main > contact - JSX file - DONE
-12. main > testimony - stylesheet - DONE
-
-13. App - JSX file
-14. APP - stylesheet
+1. Add photos for website
+2. Add profile photo
+3. Add texts
+4. Add link for contacts
+5. Add domain in Netlify
