@@ -5,6 +5,12 @@ import quality from "./images/quality.PNG";
 import fast from "./images/fast.PNG";
 import confidential from "./images/confidential.PNG";
 
+const header = {
+  english: "Services",
+  danish: "Tjenester",
+  polish: "Usługi"
+};
+
 const services = {
   english: [
     {
@@ -129,4 +135,4 @@ const promises = {
 };
 
 export default services;
-export { promises };
+export { promises, header };
