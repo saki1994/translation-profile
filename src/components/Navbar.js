@@ -3,7 +3,7 @@ import "../stylesheet/Navbar/Navbar.scss";
 import NavLink from "./navbar/NavLink.js";
 import { List } from "@mui/material";
 
-const Navbar = ({ language, newClassStyle, removeStyle }) => {
+const Navbar = ({ language, boxAnimation, removeStyle }) => {
   const [home, setHome] = useState("Home");
   const [services, setServices] = useState("Services");
   const [testimony, setTestimony] = useState("Testimony");
@@ -33,7 +33,7 @@ const Navbar = ({ language, newClassStyle, removeStyle }) => {
   );
 
   return (
-    <List className={`nav-links ${newClassStyle}`}>
+    <List className={`nav-links ${boxAnimation}`}>
       <NavLink link="#home" text={home} />
       <NavLink link="#services" text={services} />
       <NavLink link="#testimony" text={testimony} />

@@ -30,6 +30,8 @@
 
 6. Footer - done
 
-7. apply animation for each text - partiall done <-- next
+7. apply animation for each text - done
 
 8. add header to services data - done
+
+9. Deploy <-- next

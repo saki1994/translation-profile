@@ -17,18 +17,22 @@ import danishFlag from "./images/dk-flag.png";
 function App() {
 
   const [currentLanguage, setCurrentLanguage] = useState('english');
-  const [addStyle, setAddStyle] = useState("");
+  const [addTextStyle, setAddTextStyle] = useState("");
+  const [addBoxStyle, setAddBoxStyle] = useState("");
+
 
  
   const removeStyle = () => {
     return setTimeout(function() {
-      setAddStyle("");
+      setAddTextStyle("");
+      setAddBoxStyle("");
     }, 1000);
   };
 
   const changeLanguage = (e) => {
     setCurrentLanguage(e.target.name);    
-    setAddStyle("text-animation");
+    setAddTextStyle("text-animation");
+    setAddBoxStyle("box-animation")
   };
 
 
@@ -46,23 +50,23 @@ function App() {
       <img onClick={changeLanguage} src={danishFlag} alt="danish-flag" name="danish" />
     </ListItem>
       </List>
-    <Navbar language={currentLanguage} newClassStyle={addStyle} removeStyle={removeStyle}  /> 
+    <Navbar language={currentLanguage} boxAnimation={addBoxStyle} removeStyle={removeStyle}  /> 
     </nav>
          
 
     <header id="home">
-        <Home language={currentLanguage} newClassStyle={addStyle} removeStyle={removeStyle} />
-        <AboutMe language={currentLanguage} newClassStyle={addStyle} removeStyle={removeStyle} />
+        <Home language={currentLanguage} newClassStyle={addTextStyle} removeStyle={removeStyle} />
+        <AboutMe language={currentLanguage}  boxAnimation={addBoxStyle} removeStyle={removeStyle} />
     </header>
 
     <main>
-          <Services language={currentLanguage} />
-          <Testimonies language={currentLanguage} />
-          <Contacts language={currentLanguage} newClassStyle={addStyle} removeStyle={removeStyle}/>
+          <Services language={currentLanguage}   boxAnimation={addBoxStyle} removeStyle={removeStyle}  />
+          <Testimonies language={currentLanguage}  boxAnimation={addBoxStyle} removeStyle={removeStyle} />
+          <Contacts language={currentLanguage}   boxAnimation={addBoxStyle} removeStyle={removeStyle}/>
     </main>
 
     <footer>
-          <Footer language={currentLanguage} newClassStyle={addStyle} removeStyle={removeStyle}  />
+          <Footer language={currentLanguage} addTextStyle={addTextStyle} removeStyle={removeStyle}  />
     </footer>
       </> 
   );

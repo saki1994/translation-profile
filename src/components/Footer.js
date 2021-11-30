@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Typography } from "@mui/material";
 import "../stylesheet/Header/Header.scss";
 
-const Footer = ({ language }) => {
+const Footer = ({ language, addTextStyle, removeStyle }) => {
   const [footerText, setFooterText] = useState(
     "Copyright © 2021 Deniz Atici, All Rights Reserved."
   );
@@ -13,21 +12,24 @@ const Footer = ({ language }) => {
         setFooterText(
           "Copyright © 2021 Deniz Atici, Alle rettigheder forbeholdes."
         );
+        removeStyle();
       } else if (language === "polish") {
         setFooterText(
           "Copyright © 2021 Deniz Atici, Wszelkie prawa zastrzeżone."
         );
+        removeStyle();
       } else {
         setFooterText("Copyright © 2021 Deniz Atici, All Rights Reserved.");
+        removeStyle();
       }
     },
-    [language]
+    [language, removeStyle]
   );
 
   return (
-    <Typography align="center" variant="body2">
+    <p align="center" variant="body2" className={addTextStyle}>
       {footerText}
-    </Typography>
+    </p>
   );
 };
 

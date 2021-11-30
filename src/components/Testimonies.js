@@ -3,7 +3,7 @@ import reviews, { header } from "../review-data";
 import Review from "./Review";
 import "../stylesheet/Testimony/testimony.scss";
 
-const Testimonies = ({ language }) => {
+const Testimonies = ({ language, boxAnimation, removeStyle }) => {
   const [title, setTitle] = useState("Testimony");
   const [testimony, setTestimony] = useState(reviews.english);
 
@@ -12,19 +12,22 @@ const Testimonies = ({ language }) => {
       if (language === "english") {
         setTitle(header.english);
         setTestimony(reviews.english);
+        removeStyle();
       } else if (language === "polish") {
         setTitle(header.polish);
         setTestimony(reviews.polish);
+        removeStyle();
       } else {
         setTitle(header.danish);
         setTestimony(reviews.danish);
+        removeStyle();
       }
     },
-    [language]
+    [language, removeStyle]
   );
   return (
     <div className="testimony" id="testimony">
-      <h3>
+      <h3 className={boxAnimation}>
         {title}
       </h3>
 
@@ -36,6 +39,7 @@ const Testimonies = ({ language }) => {
               review={review.review}
               name={review.name}
               company={review.company}
+              boxAnimation={boxAnimation}
             />
           );
         })}

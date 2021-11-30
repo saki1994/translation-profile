@@ -5,9 +5,9 @@ import Typography from "@mui/material/Typography";
 import Rating from "@mui/material/Rating";
 import Box from "@mui/material/Box";
 
-const Review = ({ review, name, company }) => {
+const Review = ({ review, name, company, boxAnimation }) => {
   return (
-    <Card className="review-card">
+    <Card className={`review-card ${boxAnimation}`}>
       <CardContent>
         <Typography
           className="review-text"

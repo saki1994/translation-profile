@@ -4,9 +4,9 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
-const Services = ({ photo, title, body }) => {
+const Services = ({ photo, title, body, addAnimation }) => {
   return (
-    <Card className=" promise-div">
+    <Card className={`promise-div  ${addAnimation}`}>
       <CardMedia component="img" height="120" image={photo} alt={title} />
       <CardContent className="card-text-div">
         <Typography

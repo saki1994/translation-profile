@@ -4,7 +4,7 @@ import Service from "./services/Service";
 import "../stylesheet/Services/Services.scss";
 import Carousel from "react-bootstrap/Carousel";
 
-const Services = ({ language }) => {
+const Services = ({ language, boxAnimation, removeStyle }) => {
   const [serviceData, setServiceData] = useState(services.english);
   const [promiseData, setPromiseData] = useState(promises.english);
   const [headerText, setHeaderText] = useState(header.english);
@@ -15,21 +15,24 @@ const Services = ({ language }) => {
         setServiceData(services.danish);
         setPromiseData(promises.danish);
         setHeaderText(header.danish);
+        removeStyle();
       } else if (language === "polish") {
         setServiceData(services.polish);
-        setHeaderText(promises.polish);
+        setPromiseData(promises.polish);
         setHeaderText(header.polish);
+        removeStyle();
       } else {
         setServiceData(services.english);
         setPromiseData(promises.english);
         setHeaderText(header.english);
+        removeStyle();
       }
     },
-    [language]
+    [language, removeStyle]
   );
   return (
     <div id="services">
-      <h3>
+      <h3 className={boxAnimation}>
         {headerText}
       </h3>
       <div id="services-offer">
@@ -40,11 +43,12 @@ const Services = ({ language }) => {
               photo={card.img}
               title={card.title}
               body={card.text}
+              addAnimation={boxAnimation}
             />
           );
         })}
       </div>
-      <div className="promises">
+      <div className={`promises ${boxAnimation}`}>
         <Carousel variant="dark">
           {promiseData.map((promise, index) => {
             return (

@@ -3,7 +3,7 @@ import aboutData from "../home-data.js";
 import profile from "../images/profile-photo.PNG";
 import "../stylesheet/About/AboutMe.scss";
 
-const AboutMe = ({ language, newClassStyle, removeStyle }) => {
+const AboutMe = ({ language, removeStyle, boxAnimation }) => {
   const [aboutMeData, setAboutMeData] = useState(aboutData.english);
 
   useEffect(
@@ -23,11 +23,11 @@ const AboutMe = ({ language, newClassStyle, removeStyle }) => {
   );
   return (
     <div id="about-me">
-      <h3 className={newClassStyle}>
+      <h3 className={boxAnimation}>
         {aboutMeData.header}
       </h3>
-      <img src={profile} alt="profile-pic" />
-      <div className="profile-info">
+      <img className={boxAnimation} src={profile} alt="profile-pic" />
+      <div className={`profile-info   ${boxAnimation}`}>
         <p>
           <span>{aboutMeData.name}: </span>Deniz Atici
         </p>
@@ -35,7 +35,7 @@ const AboutMe = ({ language, newClassStyle, removeStyle }) => {
           <span>{aboutMeData.location[0]}: </span> {aboutMeData.location[1]}
         </p>
       </div>
-      <p className="description">
+      <p className={`description  ${boxAnimation}`}>
         {aboutMeData.description}
       </p>
     </div>

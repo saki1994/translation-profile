@@ -6,7 +6,7 @@ import email from "../images/email.png";
 import Contact from "./contactme/Contact";
 import "../stylesheet/Contact/contact.scss";
 
-const Contacts = ({ language, newClassStyle, removeStyle }) => {
+const Contacts = ({ language, boxAnimation, removeStyle }) => {
   const [contactText, setContactText] = useState({
     header: "Contact",
     pricing: "For pricing, contact me @",
@@ -48,11 +48,11 @@ const Contacts = ({ language, newClassStyle, removeStyle }) => {
   );
 
   return (
-    <div className={newClassStyle} id="contact">
-      <h3>
+    <div id="contact">
+      <h3 className={boxAnimation}>
         {contactText.header}
       </h3>
-      <Typography className={`contact-text  ${newClassStyle}`}>
+      <Typography className={`contact-text  ${boxAnimation}`}>
         {contactText.pricing}
       </Typography>
       <List className="contact-icon">
@@ -68,10 +68,10 @@ const Contacts = ({ language, newClassStyle, removeStyle }) => {
           text="email"
         />
       </List>
-      <Typography className={`contact-text  ${newClassStyle}`}>
+      <Typography className={`contact-text  ${boxAnimation}`}>
         {contactText.phone}
       </Typography>
-      <Typography className={`contact-text  ${newClassStyle}`}>
+      <Typography className={`contact-text  ${boxAnimation}`}>
         +48 123 456 789
       </Typography>
     </div>
