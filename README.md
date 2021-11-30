@@ -12,8 +12,8 @@
 3. Home > Header - JSX file - DONE
 4. Home > Header - stylesheet - DONE
 
-5. Home > About me - JSX file
-6. Home > About me - stylesheet
+5. Home > About me - JSX file - DONE
+6. Home > About me - stylesheet - DONE
 
 7. main > Services - JSX file
 8. main > Services - stylesheet

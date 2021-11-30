@@ -3,7 +3,7 @@
 #about-me {
   padding: 7%;
   background-color: $border-color;
-  color: #37322d;
+  color: $text-color;
   text-align: center;
   font-family: $text-font;
 
@@ -23,8 +23,8 @@
   }
 
   img {
-    height: 200px;
     margin: auto;
+    @include img-size(auto, 200px);
   }
 
   .description {
