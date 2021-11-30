@@ -31,12 +31,12 @@
     padding-right: 1.5em;
 
     a {
-      color: #37322d;
+      color: $text-color;
       text-decoration: none;
       cursor: pointer;
 
       &:hover {
-        color: #7c776a;
+        color: $light-grey;
       }
     }
   }

@@ -4,16 +4,22 @@ import NavLink from "./navbar/NavLink.js";
 import { List } from "@mui/material";
 
 const Navbar = ({ language, boxAnimation, removeStyle }) => {
-  const [home, setHome] = useState("Home");
-  const [services, setServices] = useState("Services");
-  const [testimony, setTestimony] = useState("Testimony");
-  const [contact, setContact] = useState("Contact");
+  const [navTxt, setNavTxt] = useState({
+    home: "Home",
+    services: "Services",
+    testimony: "Testimony",
+    contact: "Contact"
+  });
 
   const setNavbar = (home, services, testimony, contact) => {
-    setHome(home);
-    setServices(services);
-    setTestimony(testimony);
-    setContact(contact);
+    return setNavTxt(previous => {
+      return {
+        home: home,
+        services: services,
+        testimony: testimony,
+        contact: contact
+      };
+    });
   };
 
   useEffect(
@@ -34,10 +40,10 @@ const Navbar = ({ language, boxAnimation, removeStyle }) => {
 
   return (
     <List className={`nav-links ${boxAnimation}`}>
-      <NavLink link="#home" text={home} />
-      <NavLink link="#services" text={services} />
-      <NavLink link="#testimony" text={testimony} />
-      <NavLink link="#contact" text={contact} />
+      <NavLink link="#home" text={navTxt.home} />
+      <NavLink link="#services" text={navTxt.services} />
+      <NavLink link="#testimony" text={navTxt.testimony} />
+      <NavLink link="#contact" text={navTxt.contact} />
     </List>
   );
 };

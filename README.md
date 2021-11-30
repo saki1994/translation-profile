@@ -6,8 +6,8 @@
 
 ### Refactor
 
-1. Navbar - JSX file
-2. Navbar - stylesheet
+1. Navbar - JSX file - DONE
+2. Navbar - stylesheet - DONE
 
 3. Home > Header - JSX file
 4. Home > Header - stylesheet
