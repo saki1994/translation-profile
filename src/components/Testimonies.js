@@ -1,29 +1,31 @@
 import React, { useState, useEffect } from "react";
 import reviews, { header } from "../review-data";
-import Review from "./Review";
+import Testimony from "./testimony/Testimony";
 import "../stylesheet/Testimony/testimony.scss";
 
 const Testimonies = ({ language, boxAnimation, removeStyle }) => {
   const [title, setTitle] = useState("Testimony");
   const [testimony, setTestimony] = useState(reviews.english);
 
+  // function to change language for title and testimony text
+  const changeLanguage = (header, review) => {
+    setTitle(header);
+    setTestimony(review);
+    removeStyle();
+  };
+
   useEffect(
     () => {
       if (language === "english") {
-        setTitle(header.english);
-        setTestimony(reviews.english);
-        removeStyle();
+        changeLanguage(header.english, reviews.english);
       } else if (language === "polish") {
-        setTitle(header.polish);
-        setTestimony(reviews.polish);
-        removeStyle();
+        changeLanguage(header.polish, reviews.polish);
       } else {
-        setTitle(header.danish);
-        setTestimony(reviews.danish);
-        removeStyle();
+        changeLanguage(header.danish, reviews.danish);
       }
     },
-    [language, removeStyle]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [language]
   );
   return (
     <div className="testimony" id="testimony">
@@ -34,7 +36,7 @@ const Testimonies = ({ language, boxAnimation, removeStyle }) => {
       <div className="review-box">
         {testimony.map((review, index) => {
           return (
-            <Review
+            <Testimony
               key={index}
               review={review.review}
               name={review.name}

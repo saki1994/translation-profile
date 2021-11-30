@@ -1,8 +1,8 @@
 .testimony {
   text-align: center;
-  background-color: #ded9c4;
+  background-color: $border-color;
   padding: 7%;
-  font-family: "Montserrat", sans-serif;
+  font-family: $text-font;
 
   h3 {
     margin: 1em auto 2em;
@@ -22,14 +22,14 @@
 
       .review-text {
         margin-bottom: 1em;
-        font-family: "Montserrat", sans-serif;
-        color: #37322d;
+        font-family: $text-font;
+        color: $text-color;
       }
 
       .reviewer,
       .company-name {
         font-style: oblique;
-        font-family: "Montserrat", sans-serif;
+        font-family: $text-font;
       }
     }
   }

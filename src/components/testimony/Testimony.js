@@ -1,9 +1,5 @@
 import React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
-import Rating from "@mui/material/Rating";
-import Box from "@mui/material/Box";
+import { Box, Rating, Typography, CardContent, Card } from "@mui/material";
 
 const Review = ({ review, name, company, boxAnimation }) => {
   return (

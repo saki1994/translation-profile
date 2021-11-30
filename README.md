@@ -18,8 +18,8 @@
 7. main > Services - JSX file - DONE
 8. main > Services - stylesheet - DONE
 
-9. main > testimony - JSX file
-10. main > testimony - stylesheet
+9. main > testimony - JSX file - DONE
+10. main > testimony - stylesheet - DONE
 
 11. main > contact - JSX file
 12. main > testimony - stylesheet

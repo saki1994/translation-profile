@@ -13,29 +13,28 @@ const Services = ({ language, boxAnimation, removeStyle }) => {
 
   //function to change serviceContent to diff language
   const changeLanguage = (service, promise, header) => {
-    return setServiceContent(previous => {
+    setServiceContent(previous => {
       return {
         servicesData: service,
         promisesData: promise,
         headerText: header
       };
     });
+    removeStyle();
   };
 
   useEffect(
     () => {
       if (language === "danish") {
         changeLanguage(services.danish, promises.danish, header.danish);
-        removeStyle();
       } else if (language === "polish") {
         changeLanguage(services.polish, promises.polish, header.polish);
-        removeStyle();
       } else {
         changeLanguage(services.english, promises.english, header.english);
-        removeStyle();
       }
     },
-    [language, removeStyle]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [language]
   );
   return (
     <div id="services">
@@ -59,8 +58,8 @@ const Services = ({ language, boxAnimation, removeStyle }) => {
         <Carousel variant="dark">
           {serviceContent.promisesData.map((promise, index) => {
             return (
-              <Carousel.Item>
-                <Service key={index} photo={promise.img} body={promise.title} />
+              <Carousel.Item key={index}>
+                <Service photo={promise.img} body={promise.title} />
               </Carousel.Item>
             );
           })}
