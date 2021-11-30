@@ -34,7 +34,7 @@
       }
     }
     img {
-      width: 80%;
+      @include img-size(80%, auto);
       margin: auto;
     }
   }
@@ -52,6 +52,8 @@
     margin: auto;
     padding: 1em;
     width: 400px;
+
+    //animation for carousel in services section
     animation: slide-in-elliptic-top-fwd 1.5s
       cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 
@@ -69,8 +71,7 @@
     }
 
     img {
-      width: 90%;
-      height: 100%;
+      @include img-size(90%, 100%);
       margin: auto;
       filter: drop-shadow(2px 2px 1px gray);
       border: 1px solid gray;
@@ -92,7 +93,7 @@
       padding-top: 2.5rem;
 
       img {
-        width: 80%;
+        @include img-size(80%, auto);
       }
     }
   }

@@ -15,11 +15,14 @@
 5. Home > About me - JSX file - DONE
 6. Home > About me - stylesheet - DONE
 
-7. main > Services - JSX file
-8. main > Services - stylesheet
+7. main > Services - JSX file - DONE
+8. main > Services - stylesheet - DONE
 
 9. main > testimony - JSX file
 10. main > testimony - stylesheet
 
 11. main > contact - JSX file
 12. main > testimony - stylesheet
+
+13. App - JSX file
+14. APP - stylesheet

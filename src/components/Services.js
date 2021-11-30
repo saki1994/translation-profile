@@ -5,26 +5,33 @@ import "../stylesheet/Services/Services.scss";
 import Carousel from "react-bootstrap/Carousel";
 
 const Services = ({ language, boxAnimation, removeStyle }) => {
-  const [serviceData, setServiceData] = useState(services.english);
-  const [promiseData, setPromiseData] = useState(promises.english);
-  const [headerText, setHeaderText] = useState(header.english);
+  const [serviceContent, setServiceContent] = useState({
+    servicesData: services.english,
+    promisesData: promises.english,
+    headerText: header.english
+  });
+
+  //function to change serviceContent to diff language
+  const changeLanguage = (service, promise, header) => {
+    return setServiceContent(previous => {
+      return {
+        servicesData: service,
+        promisesData: promise,
+        headerText: header
+      };
+    });
+  };
 
   useEffect(
     () => {
       if (language === "danish") {
-        setServiceData(services.danish);
-        setPromiseData(promises.danish);
-        setHeaderText(header.danish);
+        changeLanguage(services.danish, promises.danish, header.danish);
         removeStyle();
       } else if (language === "polish") {
-        setServiceData(services.polish);
-        setPromiseData(promises.polish);
-        setHeaderText(header.polish);
+        changeLanguage(services.polish, promises.polish, header.polish);
         removeStyle();
       } else {
-        setServiceData(services.english);
-        setPromiseData(promises.english);
-        setHeaderText(header.english);
+        changeLanguage(services.english, promises.english, header.english);
         removeStyle();
       }
     },
@@ -33,10 +40,10 @@ const Services = ({ language, boxAnimation, removeStyle }) => {
   return (
     <div id="services">
       <h3 className={boxAnimation}>
-        {headerText}
+        {serviceContent.headerText}
       </h3>
       <div id="services-offer">
-        {serviceData.map((card, index) => {
+        {serviceContent.servicesData.map((card, index) => {
           return (
             <Service
               key={index}
@@ -50,7 +57,7 @@ const Services = ({ language, boxAnimation, removeStyle }) => {
       </div>
       <div className={`promises ${boxAnimation}`}>
         <Carousel variant="dark">
-          {promiseData.map((promise, index) => {
+          {serviceContent.promisesData.map((promise, index) => {
             return (
               <Carousel.Item>
                 <Service key={index} photo={promise.img} body={promise.title} />
