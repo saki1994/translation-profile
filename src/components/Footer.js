@@ -1,34 +1,12 @@
-import React, { useState, useEffect } from "react";
-import "../stylesheet/Home/home.scss";
+import { useContext } from "react";
+import { LanguagesData } from "../Apps";
 
-const Footer = ({ language, addTextStyle, removeStyle }) => {
-  const [footerText, setFooterText] = useState(
-    "Copyright © 2021 Deniz Atici, All Rights Reserved."
-  );
-
-  useEffect(
-    () => {
-      if (language === "danish") {
-        setFooterText(
-          "Copyright © 2021 Deniz Atici, Alle rettigheder forbeholdes."
-        );
-        removeStyle();
-      } else if (language === "polish") {
-        setFooterText(
-          "Copyright © 2021 Deniz Atici, Wszelkie prawa zastrzeżone."
-        );
-        removeStyle();
-      } else {
-        setFooterText("Copyright © 2021 Deniz Atici, All Rights Reserved.");
-        removeStyle();
-      }
-    },
-    [language, removeStyle]
-  );
+const Footer = () => {
+  const data = useContext(LanguagesData);
 
   return (
-    <p align="center" variant="body2" className={addTextStyle}>
-      {footerText}
+    <p align="center">
+      {data.copyright}
     </p>
   );
 };

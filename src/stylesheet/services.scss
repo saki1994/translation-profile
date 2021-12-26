@@ -1,4 +1,4 @@
-@import "../variables";
+@import "./variables";
 
 #services {
   padding: 5%;
@@ -52,23 +52,6 @@
     margin: auto;
     padding: 1em;
     width: 400px;
-
-    //animation for carousel in services section
-    animation: slide-in-elliptic-top-fwd 1.5s
-      cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-
-    @keyframes slide-in-elliptic-top-fwd {
-      0% {
-        transform: translateY(-600px) rotateX(-30deg) scale(0);
-        transform-origin: 50% 100%;
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0) rotateX(0) scale(1);
-        transform-origin: 50% 1400px;
-        opacity: 1;
-      }
-    }
 
     img {
       @include img-size(90%, 100%);

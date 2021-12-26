@@ -1,65 +1,34 @@
-import React, { useState, useEffect } from "react";
-import services, { promises, header } from "../services-data";
-import Service from "./services/Service";
-import "../stylesheet/Services/Services.scss";
+import { useContext } from "react";
+import { LanguagesData } from "../Apps";
+import ServiceCard from "./ServiceCard";
 import Carousel from "react-bootstrap/Carousel";
 
-const Services = ({ language, boxAnimation, removeStyle }) => {
-  const [serviceContent, setServiceContent] = useState({
-    servicesData: services.english,
-    promisesData: promises.english,
-    headerText: header.english
-  });
+const Services = () => {
+  const data = useContext(LanguagesData);
 
-  //function to change serviceContent to diff language
-  const changeLanguage = (service, promise, header) => {
-    setServiceContent(previous => {
-      return {
-        servicesData: service,
-        promisesData: promise,
-        headerText: header
-      };
-    });
-    removeStyle();
-  };
-
-  useEffect(
-    () => {
-      if (language === "danish") {
-        changeLanguage(services.danish, promises.danish, header.danish);
-      } else if (language === "polish") {
-        changeLanguage(services.polish, promises.polish, header.polish);
-      } else {
-        changeLanguage(services.english, promises.english, header.english);
-      }
-    },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [language]
-  );
   return (
     <div id="services">
-      <h3 className={boxAnimation}>
-        {serviceContent.headerText}
+      <h3>
+        {data.servicesTitle}
       </h3>
       <div id="services-offer">
-        {serviceContent.servicesData.map((card, index) => {
+        {data.services.map((card, index) => {
           return (
-            <Service
+            <ServiceCard
               key={index}
               photo={card.img}
               title={card.title}
               body={card.text}
-              addAnimation={boxAnimation}
             />
           );
         })}
       </div>
-      <div className={`promises ${boxAnimation}`}>
+      <div className="promises">
         <Carousel variant="dark">
-          {serviceContent.promisesData.map((promise, index) => {
+          {data.promises.map((promise, index) => {
             return (
               <Carousel.Item key={index}>
-                <Service photo={promise.img} body={promise.title} />
+                <ServiceCard photo={promise.img} body={promise.title} />
               </Carousel.Item>
             );
           })}

@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Rating, Typography, CardContent, Card } from "@mui/material";
 
-const Review = ({ review, name, company, boxAnimation }) => {
+const ReviewCard = ({ review, name, company }) => {
   return (
-    <Card className={`review-card ${boxAnimation}`}>
+    <Card className="review-card">
       <CardContent>
         <Typography
           className="review-text"
@@ -37,4 +37,4 @@ const Review = ({ review, name, company, boxAnimation }) => {
   );
 };
 
-export default Review;
+export default ReviewCard;

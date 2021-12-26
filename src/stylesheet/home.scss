@@ -1,9 +1,9 @@
-@import "../variables";
+@import "./variables";
 
 #header {
   font-family: $header-font;
   padding: 15%;
-  background-image: url("../../images/bg.png");
+  background-image: url("../images/bg.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;

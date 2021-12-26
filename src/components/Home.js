@@ -1,32 +1,16 @@
-import React, { useEffect, useState } from "react";
-import { headerData } from "../home-data.js";
-import "../stylesheet/Home/home.scss";
+import { useContext } from "react";
+import { LanguagesData } from "../Apps";
 
-const Home = ({ language, newClassStyle, removeStyle }) => {
-  const [headerInfo, setHeader] = useState(headerData.english);
+const Home = () => {
+  const data = useContext(LanguagesData);
 
-  useEffect(
-    () => {
-      if (language === "danish") {
-        setHeader(headerData.danish);
-        removeStyle();
-      } else if (language === "polish") {
-        setHeader(headerData.polish);
-        removeStyle();
-      } else {
-        setHeader(headerData.english);
-        removeStyle();
-      }
-    },
-    [language, removeStyle]
-  );
   return (
-    <div id="header" className={newClassStyle}>
+    <div id="header">
       <h1>
-        {headerInfo.name}
+        {data.headerData.name}
       </h1>
       <h2>
-        {headerInfo.workTitle}
+        {data.headerData.workTitle}
       </h2>
     </div>
   );
