@@ -3,6 +3,7 @@
 #contact {
   text-align: center;
   padding: 7%;
+  padding-top: 0;
   @include display(flex, column, 30px);
 
   .contact-text,
