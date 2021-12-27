@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { LanguagesData } from "../Apps";
+import { LanguagesData } from "../App";
 import NavLink from "./NavLink.js";
 import { List } from "@mui/material";
 
@@ -8,10 +8,10 @@ const Navbar = () => {
 
   return (
     <List className="nav-links">
-      <NavLink link="#home" text={data.navTextData[0]} />
-      <NavLink link="#services" text={data.navTextData[1]} />
-      <NavLink link="#testimony" text={data.navTextData[2]} />
-      <NavLink link="#contact" text={data.navTextData[3]} />
+      <NavLink link="#home" text={data.navTextData.home} />
+      <NavLink link="#services" text={data.navTextData.services} />
+      <NavLink link="#testimony" text={data.navTextData.testimony} />
+      <NavLink link="#contact" text={data.navTextData.contact} />
     </List>
   );
 };

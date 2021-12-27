@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { LanguagesData } from "../Apps";
+import { LanguagesData } from "../App";
 
 const Home = () => {
   const data = useContext(LanguagesData);

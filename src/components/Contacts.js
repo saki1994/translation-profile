@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { LanguagesData } from "../Apps";
+import { LanguagesData } from "../App";
 import { List } from "@mui/material";
 import Contact from "./Contact";
 import upwork from "../images/upwork.png";
@@ -12,10 +12,10 @@ const Contacts = () => {
   return (
     <div id="contact">
       <h3>
-        {data.contactTitle}
+        {data.contactInfo.contactTitle}
       </h3>
       <p className="contact-text">
-        {data.contact}
+        {data.contactInfo.contact}
       </p>
       <List className="contact-icon">
         <Contact
@@ -31,7 +31,7 @@ const Contacts = () => {
         />
       </List>
       <p className="contact-text">
-        {data.phoneNum}
+        {data.contactInfo.phoneNum}
       </p>
       <p className="contact-text">+48 123 456 789</p>
     </div>

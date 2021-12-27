@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { LanguagesData } from "../Apps";
+import { LanguagesData } from "../App";
 import profile from "../images/profile-photo.PNG";
 
 const Info = () => {

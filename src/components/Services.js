@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { LanguagesData } from "../Apps";
+import { LanguagesData } from "../App";
 import ServiceCard from "./ServiceCard";
 import Carousel from "react-bootstrap/Carousel";
 
