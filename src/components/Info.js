@@ -1,8 +1,5 @@
 import { useContext } from "react";
 import { LanguagesData } from "../App";
-import profile from "../images/profile.png";
-import profile2 from "../images/profile2.jpg";
-import Carousel from "react-bootstrap/Carousel";
 
 const Info = () => {
   const data = useContext(LanguagesData);

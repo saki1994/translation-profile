@@ -20,8 +20,7 @@ import Contacts from "./components/Contacts";
 import Footer from './components/Footer';
 import * as danish from  "./DanishData";
 import * as english from  "./EnglishData";
-import * as polish from  "./PolishData";
-import wave from "./images/wave.svg";
+import * as polish from  "./PolishData"; 
 
 
 
