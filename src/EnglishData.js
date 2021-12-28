@@ -16,7 +16,8 @@ export const aboutData = {
   header: "About Me",
   name: "Name",
   location: ["Location", "Szczecin, Poland"],
-  description: `Currently working as a senior executive processor at Apple Maps with 8+ years experience with translation in Danish and fluent in Polish and English.I have worked in translating an ecommerce website from product to FAQ, Terms and Condition and Privacy.`
+  description: `I am a native Danish Speaker living in Poland, currently working as Senior Executive Processor at Apple. I can help you translate Danish to Polish and Polish to Danish. My translations are accurate because i always proofread everything before delivery.
+  I maintine open and friendly communication and I never rely on automatic translattion technology to do my job.`
 };
 
 export const headerData = {

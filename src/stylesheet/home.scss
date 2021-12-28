@@ -2,13 +2,22 @@
 
 #header {
   font-family: $header-font;
-  height: 70vh;
+  padding: 1% 7% 5%;
+  height: 80vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin: 0;
+  flex-direction: row;
+  background: $bg-color;
+  background-image: url("../images/wave-dark.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  .data {
+    align-self: center;
+  }
+
+  .profileImg {
+    width: 56vw;
+  }
 
   & > * {
     width: fit-content;
@@ -17,29 +26,38 @@
 
   h1 {
     color: $text-color;
-    padding-left: 15%;
     align-self: flex-start;
   }
 
   h2 {
     color: $light-grey;
-    padding-left: 25%;
+    padding-left: 15%;
     align-self: flex-start;
   }
 
   p {
     font-family: $text-font;
-    width: 70%;
     margin-top: 30px;
     font-size: 13px;
     line-height: 1.8;
+  }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(30px 10px 4px $light-grey);
+    clip-path: circle(50% at 60% 50%);
   }
 }
 
 @media (max-width: 700px) {
   #header {
-    padding: 25% 1%;
+    display: flex;
+    flex-direction: column;
 
+    .profileImg {
+      margin-left: 15%;
+    }
     & > * {
       margin: 0;
     }
@@ -55,8 +73,27 @@
   }
 }
 
+@media (max-width: 900px) {
+  #header {
+    padding: 5em 1em 0;
+    height: fit-content;
+
+    .data {
+      padding: 0 5%;
+    }
+
+    .profileImg {
+      width: 50vw;
+    }
+  }
+}
+
 @media (max-width: 400px) {
   #header {
+    .profileImg {
+      width: 60vw;
+      margin-left: 10%;
+    }
     h1 {
       font-size: 2em;
       padding: 0 0 0 0.8em;
