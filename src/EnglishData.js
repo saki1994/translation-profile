@@ -79,21 +79,21 @@ export const reviews = [
     review:
       "The jackfruit was domesticated independently in South Asia and Southeast Asia. The fruit was later introduced to Guam via Filipino settlers when both were part of the Spanish Empire.",
     name: "Sarah Atici",
-    company: "Sarah Co.",
+    company: "Sample Co.",
     star: "5"
   },
   {
     review:
       "The jackfruit was domesticated independently in South Asia and Southeast Asia. The fruit was later introduced to Guam via Filipino settlers when both were part of the Spanish Empire.",
-    name: "Raya Cox",
-    company: "Raya Corp.",
+    name: "Cox",
+    company: "Sample Corp.",
     star: "5"
   },
   {
     review:
       "The jackfruit was domesticated independently in South Asia and Southeast Asia. The fruit was later introduced to Guam via Filipino settlers when both were part of the Spanish Empire.",
-    name: "Bianca Atici",
-    company: "Bianca INC.",
+    name: "sample",
+    company: "Sample inc.",
     star: "5"
   }
 ];
