@@ -74,24 +74,21 @@ export const reviewTitle = "Świadectwo";
 
 export const reviews = [
   {
-    review:
-      "Jackfruit został udomowiony niezależnie w Azji Południowej i Azji Południowo-Wschodniej. Owoce zostały później wprowadzone na Guam przez osadników filipińskich, gdy obaj byli częścią Cesarstwa Hiszpańskiego.",
-    name: "Sarah Atici",
-    company: "Sarah Co.",
+    review:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac suscipit turpis. Maecenas odio erat, tempus eleifend mauris quis, interdum consequat leo. ",
+    name: "Lorem Ipsum",
+   company: "Lorem Ipsum",
     star: "5"
   },
   {
-    review:
-      "Jackfruit został udomowiony niezależnie w Azji Południowej i Azji Południowo-Wschodniej. Owoce zostały później wprowadzone na Guam przez osadników filipińskich, gdy obaj byli częścią Cesarstwa Hiszpańskiego.",
-    name: "Raya Cox",
-    company: "Raya Corp.",
+    review:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac suscipit turpis. Maecenas odio erat, tempus eleifend mauris quis, interdum consequat leo. ",
+    name: "Lorem Ipsum",
+   company: "Lorem Ipsum",
     star: "5"
   },
   {
-    review:
-      "Jackfruit został udomowiony niezależnie w Azji Południowej i Azji Południowo-Wschodniej. Owoce zostały później wprowadzone na Guam przez osadników filipińskich, gdy obaj byli częścią Cesarstwa Hiszpańskiego.",
-    name: "Bianca Atici",
-    company: "Bianca INC.",
+    review:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac suscipit turpis. Maecenas odio erat, tempus eleifend mauris quis, interdum consequat leo. ",
+    name: "Lorem Ipsum",
+   company: "Lorem Ipsum",
     star: "5"
   }
 ];

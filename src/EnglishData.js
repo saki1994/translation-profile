@@ -76,24 +76,21 @@ export const reviewTitle = "Testimony";
 
 export const reviews = [
   {
-    review:
-      "The jackfruit was domesticated independently in South Asia and Southeast Asia. The fruit was later introduced to Guam via Filipino settlers when both were part of the Spanish Empire.",
-    name: "Sarah Atici",
-    company: "Sample Co.",
+    review:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac suscipit turpis. Maecenas odio erat, tempus eleifend mauris quis, interdum consequat leo. ",
+    name: "Lorem Ipsum",
+   company: "Lorem Ipsum", 
     star: "5"
   },
   {
-    review:
-      "The jackfruit was domesticated independently in South Asia and Southeast Asia. The fruit was later introduced to Guam via Filipino settlers when both were part of the Spanish Empire.",
-    name: "Cox",
-    company: "Sample Corp.",
+    review:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac suscipit turpis. Maecenas odio erat, tempus eleifend mauris quis, interdum consequat leo. ",
+    name: "Lorem Ipsum",
+   company: "Lorem Ipsum",
     star: "5"
   },
   {
-    review:
-      "The jackfruit was domesticated independently in South Asia and Southeast Asia. The fruit was later introduced to Guam via Filipino settlers when both were part of the Spanish Empire.",
-    name: "sample",
-    company: "Sample inc.",
+    review:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac suscipit turpis. Maecenas odio erat, tempus eleifend mauris quis, interdum consequat leo. ",
+    name: "Lorem Ipsum",
+   company: "Lorem Ipsum",
     star: "5"
   }
 ];

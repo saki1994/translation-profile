@@ -76,25 +76,22 @@ export const reviewTitle = "Vidnesbyrd";
 
 export const reviews = [
   {
-    review:
-      "Jackfrugten blev tæmmet uafhængigt i Sydasien og Sydøstasien. Frugten blev senere introduceret til Guam via filippinske bosættere, da begge var en del af det spanske imperium.",
-    name: "Sarah Atici",
-    company: "Sarah Co.",
+    review:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac suscipit turpis. Maecenas odio erat, tempus eleifend mauris quis, interdum consequat leo. ",
+     name: "Lorem Ipsum",
+    company: "Lorem Ipsum",
     star: "5"
   },
   {
-    review:
-      "Jackfrugten blev tæmmet uafhængigt i Sydasien og Sydøstasien. Frugten blev senere introduceret til Guam via filippinske bosættere, da begge var en del af det spanske imperium.",
-    name: "Raya Cox",
-    company: "Raya Corp.",
+    review:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac suscipit turpis. Maecenas odio erat, tempus eleifend mauris quis, interdum consequat leo. ",
+     name: "Lorem Ipsum",
+    company: "Lorem Ipsum",
     star: "5"
   },
   {
-    review:
-      "Jackfrugten blev tæmmet uafhængigt i Sydasien og Sydøstasien. Frugten blev senere introduceret til Guam via filippinske bosættere, da begge var en del af det spanske imperium.",
-    name: "Bianca Atici",
-    company: "Bianca INC.",
-    star: "5"
+    review:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac suscipit turpis. Maecenas odio erat, tempus eleifend mauris quis, interdum consequat leo. ",
+    name: "Lorem Ipsum",
+   company: "Lorem Ipsum",
+   star: "5" 
   }
 ];
 
